@@ -1,8 +1,7 @@
-// /pages/dashboard/index.js
-import { useGetProjects } from "../../hooks/useGetProjects";
-import Card from "../../components/Card";
-import Typography from "../../components/Typography";
-import Button from "../../components/Button";
+import {useGetProjects} from "@/hooks/useGetProjects";
+import Card from "@/components/Card";
+import Button from "@/components/Button";
+import Typography from "@/components/Typeography";
 
 export default function Dashboard() {
   const projects = useGetProjects();
