@@ -8,12 +8,13 @@ export default function Dashboard() {
 
   return (
    <div>
-     {projects.map((project) => (
-      <Card key={project.id}>
-        <Typography variant="h1">{project.name}</Typography>
-        <Button variant="primary">View Project</Button>
-      </Card>
-     ))}
+     {/*{projects.map((project) => (*/}
+     {/* <Card key={project.id}>*/}
+     {/*   <Typography variant="h1">{project.name}</Typography>*/}
+     {/*   <Button variant="primary">View Project</Button>*/}
+     {/* </Card>*/}
+     {/*))}*/}
+     CMS
    </div>
   );
 }
