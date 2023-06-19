@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import { Amplify } from 'aws-amplify';
+import awsExports from '@/aws-exports';
+import styles from '../styles/Home.module.css';
 
+Amplify.configure({ ...awsExports, ssr: true });
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {

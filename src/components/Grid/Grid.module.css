@@ -1,0 +1,25 @@
+.gridContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Add this line to make sure the children are arranged in a row */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.gridItem {
+    flex: 1;
+    padding: 0 4px;
+}
+
+.gridItemWidth1 { flex: 0 0 8.33%; }  /* 1/12 of 100% */
+.gridItemWidth2 { flex: 0 0 16.66%; } /* 2/12 of 100%, and so on... */
+.gridItemWidth3 { flex: 0 0 25%; }
+.gridItemWidth4 { flex: 0 0 33.33%; }
+.gridItemWidth5 { flex: 0 0 41.66%; }
+.gridItemWidth6 { flex: 0 0 50%; }
+.gridItemWidth7 { flex: 0 0 58.33%; }
+.gridItemWidth8 { flex: 0 0 66.66%; }
+.gridItemWidth9 { flex: 0 0 75%; }
+.gridItemWidth10 { flex: 0 0 83.33%; }
+.gridItemWidth11 { flex: 0 0 91.66%; }
+.gridItemWidth12 { flex: 0 0 100%; }

@@ -1,0 +1,36 @@
+/* PublicSidebar.module.css */
+.sidebar {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    max-width: 300px;
+    overflow: auto;
+    background: #333;
+    color: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebarOpen {
+    transform: translateX(0);
+}
+
+.sidebarLink {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebarLink:hover {
+    background: #444;
+}
+
+@media (min-width: 768px) {
+    .sidebar,
+    .sidebarOpen {
+        transform: translateX(-100%);
+    }
+}
